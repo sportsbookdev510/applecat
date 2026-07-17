@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#00C805" />
+
+    <title>$APPCAT: Apple Cat</title>
+    <meta
+      name="description"
+      content="Apple Cat ($APPCAT). Robin Hood isn't just a legendary outlaw anymore. Today, Robinhood is one of the world's most recognized stock trading platforms."
+    />
+
+    <meta property="og:title" content="$APPCAT: Apple Cat" />
+    <meta
+      property="og:description"
+      content="Why Apple Cat? Robin Hood isn't just a legendary outlaw anymore. Today, Robinhood serves millions of users worldwide."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://robinhoodmascot.fun/" />
+    <meta
+      property="og:image"
+      content="https://robinhoodmascot.fun/assets/logo.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="$APPCAT: Apple Cat" />
+    <meta
+      name="twitter:description"
+      content="Why Apple Cat? Robin Hood isn't just a legendary outlaw anymore. Today, Robinhood serves millions of users worldwide."
+    />
+    <meta
+      name="twitter:image"
+      content="https://robinhoodmascot.fun/assets/logo.png"
+    />
+    <link rel="canonical" href="https://robinhoodmascot.fun/" />
+
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Figtree:wght@500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <noscript
+      ><style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip-link" href="#hero">Skip to content</a>
+
+    <header class="nav" id="top">
+      <div class="nav__inner">
+        <a class="brand" href="#top" aria-label="$APPCAT home">
+          <img
+            class="brand__logo"
+            src="assets/logo.png"
+            alt=""
+            width="44"
+            height="44"
+          />
+          <span class="brand__text">
+            <span class="brand__name">$APPCAT</span>
+            <span class="brand__sub">Apple Cat</span>
+          </span>
+        </a>
+
+        <nav class="nav__links" id="primary-nav" aria-label="Primary">
+          <a href="#lore">lore</a>
+          <a href="#tokenomics">tokenomics</a>
+          <a href="#buy">how to buy</a>
+          <a href="#gallery">gallery</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a
+            class="nav__icon"
+            href="https://x.com/applecatxyz"
+            data-social="x"
+            aria-label="X (Twitter)"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"
+              />
+            </svg>
+          </a>
+          <a class="btn btn--solid nav__cta" href="#" data-social="buy"
+            >buy $APPCAT</a
+          >
+        </div>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="nav__backdrop" id="navBackdrop" hidden></div>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__pattern" aria-hidden="true"></div>
+        <div class="hero__inner">
+          <div class="hero__copy">
+            <h1 class="hero__brand">$APPCAT</h1>
+            <p class="hero__punch">
+              Apple Cat
+            </p>
+            <p class="hero__sub">
+              Robin Hood isn’t just a legendary outlaw anymore. Today, Robinhood
+              is one of the world’s most recognized stock trading platforms.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--solid btn--lg" href="#" data-social="buy"
+                >buy $APPCAT</a
+              >
+              <a class="btn btn--outline btn--lg" href="#lore">the lore</a>
+              <a class="btn btn--ink btn--lg" href="https://x.com/applecatxyz" data-social="x"
+                >twitter</a
+              >
+            </div>
+
+            <div class="ca" aria-label="Contract address">
+              <span class="ca__label">CA</span>
+              <code class="ca__value" id="caValue">0xComingSoon</code>
+              <button
+                class="ca__copy"
+                id="copyBtn"
+                type="button"
+                aria-label="Copy contract address"
+              >
+                copy
+              </button>
+            </div>
+          </div>
+
+          <div class="hero__mascot">
+            <img
+              src="assets/logo.png"
+              alt="Apple Cat mascot"
+              width="640"
+              height="640"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>$APPCAT</span><i></i> <span>APPLE CAT</span><i></i>
+          <span>WHY APPLE CAT</span><i></i> <span>ROBIN HOOD</span><i></i>
+          <span>ROBINHOOD</span><i></i>
+          <span>TAKES FROM THE RICH</span><i></i> <span>GIVES TO THE CATS</span
+          ><i></i> <span>$APPCAT</span><i></i> <span>APPLE CAT</span
+          ><i></i> <span>WHY APPLE CAT</span><i></i> <span>ROBIN HOOD</span
+          ><i></i> <span>ROBINHOOD</span><i></i>
+          <span>TAKES FROM THE RICH</span><i></i> <span>GIVES TO THE CATS</span
+          ><i></i>
+        </div>
+      </div>
+
+      <section class="section lore" id="lore">
+        <div class="lore__top">
+          <div class="lore__mascot reveal">
+            <img
+              src="assets/hobbs-archer.png"
+              alt="Apple Cat drawing his bow"
+              width="480"
+              height="520"
+              loading="lazy"
+            />
+          </div>
+          <div class="lore__copy">
+            <p class="eyebrow reveal">the lore</p>
+            <h2 class="reveal">Why Apple Cat?</h2>
+            <ul class="punches">
+              <li class="reveal">
+                <b>01</b
+                ><span
+                  >Robin Hood isn’t just a legendary outlaw anymore.</span
+                >
+              </li>
+              <li class="reveal">
+                <b>02</b
+                ><span
+                  >Today, Robinhood is one of the world’s most recognized stock
+                  trading platforms, serving millions of users and making
+                  investing more accessible than ever.</span
+                >
+              </li>
+              <li class="reveal">
+                <b>03</b
+                ><span
+                  >$APPCAT is Apple Cat — the mascot spirit of that story, now on
+                  chain.</span
+                >
+              </li>
+            </ul>
+            <p class="lore__now reveal">
+              <strong>$APPCAT</strong> · Apple Cat. Now on the chain.
+            </p>
+            <a class="btn btn--solid reveal" href="#" data-social="buy"
+              >buy $APPCAT</a
+            >
+          </div>
+        </div>
+
+
+      </section>
+
+      <section class="section tok" id="tokenomics">
+        <p class="eyebrow reveal">tokenomics</p>
+        <h2 class="reveal">mascot coin. simple bow.</h2>
+        <div class="tok__grid">
+          <div class="tok__item reveal">
+            <span class="tok__val">1B</span>
+            <span class="tok__lab">supply</span>
+          </div>
+          <div class="tok__item reveal">
+            <span class="tok__val">0%</span>
+            <span class="tok__lab">tax</span>
+          </div>
+          <div class="tok__item reveal">
+            <span class="tok__val">LP</span>
+            <span class="tok__lab">burned</span>
+          </div>
+          <div class="tok__item reveal">
+            <span class="tok__val">OWN</span>
+            <span class="tok__lab">renounced</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section buy" id="buy">
+        <p class="eyebrow reveal">how to buy</p>
+        <h2 class="reveal">four shots to the bag.</h2>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__n">1</span>
+            <div>
+              <h3>add the network</h3>
+              <p>add the robinhood network to your wallet.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">2</span>
+            <div>
+              <h3>bridge funds</h3>
+              <p>bridge funds over to the robinhood chain.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">3</span>
+            <div>
+              <h3>paste the ca</h3>
+              <p>open the dex. paste the contract. swap for $APPCAT.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">4</span>
+            <div>
+              <h3>draw the bow</h3>
+              <p>aim true. back Apple Cat. welcome to the merry men.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="buy__cta reveal">
+          <a class="btn btn--solid btn--lg" href="#" data-social="buy"
+            >buy $APPCAT</a
+          >
+          <a class="btn btn--outline btn--lg" href="#" data-social="chart"
+            >chart</a
+          >
+        </div>
+      </section>
+
+
+
+      <section class="closing" id="cta">
+        <div class="closing__band">
+          <img
+            class="closing__mascot"
+            src="assets/logo.png"
+            alt=""
+            width="200"
+            height="200"
+          />
+          <h2>Apple Cat is here.</h2>
+          <p>now the mascot is on chain.</p>
+          <div class="closing__actions">
+            <a class="btn btn--solid btn--lg" href="#" data-social="buy"
+              >buy $APPCAT</a
+            >
+            <a class="btn btn--ink btn--lg" href="https://x.com/applecatxyz" data-social="x">twitter</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__brand">
+          $APPCAT · Apple Cat
+        </p>
+        <p class="footer__disclaimer">
+          $APPCAT is a mascot meme coin with no intrinsic value or expectation of
+          financial return. not affiliated with robinhood financial. for
+          entertainment only.
+        </p>
+        <div class="footer__links">
+          <a href="https://x.com/applecatxyz" data-social="x">twitter</a>
+          <a href="#" data-social="chart">chart</a>
+          <a href="#" data-social="buy">buy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
