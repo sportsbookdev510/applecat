@@ -1,8 +1,8 @@
 const CONFIG = {
-  ca: "0xComingSoon",
+  ca: "0xe5305e72e9f0512200707a47e9320877f1a908a0",
   links: {
     x: "https://x.com/applecatxyz",
-    buy: "https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xComingSoon",
+    buy: "https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xe5305e72e9f0512200707a47e9320877f1a908a0",
     chart: "",
   },
 };
@@ -44,7 +44,7 @@ const copyBtn = document.getElementById("copyBtn");
 if (copyBtn) {
   copyBtn.addEventListener("click", async () => {
     const value = CONFIG.ca || caValue?.textContent || "";
-    if (!value || value === "TBA" || value === "0xComingSoon") {
+    if (!value || value === "TBA" || value === "0xe5305e72e9f0512200707a47e9320877f1a908a0") {
       toast("CA not live yet");
       return;
     }
